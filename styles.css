@@ -1,0 +1,238 @@
+/* Header and Hero Section */
+.header-hero {
+    background: url('back2.jpg') center/cover no-repeat;
+    color:whitesmoke;
+    text-align: center;
+    padding: 50 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(205, 18, 18, 0.5);;
+}
+
+nav {
+    background-color: transparent;
+    overflow: hidden;
+
+}
+
+nav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #dd4444;
+}
+
+/* Hero Section Content */
+
+.header-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    order: 2;
+    text-shadow: 2px 2px 4px rgba(205, 18, 18, 0.5);
+    text-align: center;
+}
+
+.header-hero .hero-content h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.header-hero .hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.header-hero .hero-content a.btn-primary {
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    background-color: #ff5555;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.header-hero .hero-content a.btn-primary:hover {
+    background-color: #dd4444;
+    transform: scale(1.05);
+}
+
+.header-hero .hero-content .btn-primary::before {
+    content: "→ ";
+    margin-right: 5px;
+}
+
+/* Stylish hover effect for the button */
+.header-hero .hero-content a.btn-primary::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+    transform: translateY(-2px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.header-hero .hero-content a.btn-primary:hover::before {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+/* About Us Section */
+.about {
+
+    padding: 150px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(204, 20, 20, 0.5);
+    background-size:cover;
+    color:whitesmoke; 
+    background-image: url('About1.jpg');
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+/* Style the product listings section */
+.products {
+    background-color:whitesmoke;
+    padding: 10px 0;
+    text-align:center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    background-color:whitesmoke;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex-basis: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-card .product-price {
+    font-size: 18px;
+    color: #ff5555;
+}
+
+
+
+/*  contact form */
+
+.contact {
+    background:whitesmoke;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.contact form button {
+    text-decoration: none;
+    display: flex;
+    padding: 20px 30px;
+    background-color: #ff5555;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Style the footer section */
+footer {
+    background-color: whitesmoke;
+    color: black;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-content a {
+        font-size: 16px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-card h3 {
+        font-size: 20px;
+    }
+
+    .product-price {
+        font-size: 18px;
+    }
+
+    .product-description {
+        font-size: 14px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        padding: 10px 0;
+    }
+
+    .contact form button {
+        font-size: 32px;
+    }
+}
